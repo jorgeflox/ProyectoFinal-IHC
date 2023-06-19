@@ -6,7 +6,9 @@
     max-width: 1000px;
     margin: 0 auto;
   }
-  
+  .alimentos-title {
+    color: orange;
+}
   .producto-alimento {
     width: calc(25% - 20px);
     margin-bottom: 30px;
