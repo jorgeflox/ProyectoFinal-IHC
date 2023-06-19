@@ -6,3 +6,44 @@
     background-color: rgb(253,199,149);
     border: none;
 }
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.producto {
+  width: calc(25% - 20px);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.producto img {
+  display: block;
+  width: 235px;
+  height: 205px;
+  margin: 0 auto;
+  border: 2px solid rgb(195, 120, 62);
+  border-radius: 5px;
+}
+
+.producto h2.nombre-producto {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(242, 147, 1);
+  text-transform: uppercase;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .producto {
+    width: calc(50% - 20px);
+  }
+}
